@@ -1,0 +1,133 @@
+:root {
+   --Dark--Blue: hsl(209, 23%, 22%);
+   --Bg--Very--Dark--Blue: hsl(207, 26%, 17%);
+   --Very--Dark--Blue: hsl(200, 15%, 8%);
+   --Dark--Gray: hsl(0, 0%, 52%);
+   --Very--Ligh--Gray: hsl(0, 0%, 98%);
+   --White: hsl(0, 0%, 100%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+header {
+   background-color: var(--White);
+   box-shadow: 0 0.1px 25px -20px #111;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: 600;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 85px;
+}
+.toggle-theme-btn {
+   font-size: 13px;
+}
+.container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 90%;
+   margin: 0 auto;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: 600;
+   font-size: 16px;
+}
+h1 {
+   font-size: 24px;
+}
+button {
+   background-color: transparent;
+   border: none;
+}
+
+.input-section {
+   margin: 50px auto;
+   align-items: flex-start;
+}
+.input-section form select {
+   padding: 23px;
+   border: none;
+   width: 300px;
+   background-color: var(--White);
+}
+.input-section input {
+   padding: 23px 60px;
+   width: 500px;
+   max-width: 100%;
+   border-radius: 5px;
+   border: none;
+   box-shadow: 0 0.1px 15px -10px #111;
+   margin-bottom: 25px;
+}
+.search-form {
+   position: relative;
+}
+.search-icon {
+   position: absolute;
+   top: 23px;
+   left: 25px;
+   opacity: 0.5;
+}
+
+.card {
+   background-color: var(--White);
+   width: 350px;
+   margin-bottom: 60px;
+   border-radius: 5px;
+   box-shadow: 0 0.1px 25px -20px #111;
+   overflow: hidden;
+   align-content: center;
+}
+.card img {
+   width: 350px;
+   max-width: 100%;
+}
+.card ul {
+   margin: 0 0 70px 0;
+}
+.card ul li {
+   list-style-type: none;
+}
+.card span {
+   opacity: 0.5;
+}
+.card p {
+   line-height: 10px;
+}
+
+@media screen and (max-width: 650px) {
+   .container {
+      justify-content: center;
+   }
+   header .container {
+      justify-content: space-between;
+   }
+   .input-section input {
+      width: 450px;
+      margin-bottom: 25px;
+   }
+   .input-section {
+      justify-content: flex-start;
+   }
+   h1 {
+      font-size: 16px;
+   }
+}
+
+@media screen and (max-width: 375px) {
+   .container {
+      justify-content: center;
+   }
+   header .container {
+      justify-content: space-between;
+   }
+   .input-section input {
+      width: 350px;
+   }
+   .input-section {
+      justify-content: flex-start;
+   }
+   h1 {
+      font-size: 16px;
+   }
+}

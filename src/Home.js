@@ -68,7 +68,7 @@ const Home = () => {
          </header>
          <main className='main-container'>
             <div className='container input-section'>
-               <form className='search-form'>
+               <form type='submit' className='search-form'>
                   <FaSearch className='search-icon' />
                   <input
                      type='text'
@@ -77,14 +77,16 @@ const Home = () => {
                         backgroundColor: theme.DarkBlue,
                         color: theme.color,
                      }}
+                     name='search-input'
                      value={search}
                      onChange={(e) => setSearch(e.target.value)}
                   />
                </form>
-               <form action='/#'>
+               <form type='submit' action='/#'>
                   <select
                      id='cars'
                      name='cars'
+                     aria-labelledby='selectId'
                      style={{
                         backgroundColor: theme.DarkBlue,
                         color: theme.color,

@@ -77,12 +77,12 @@ const Home = () => {
                         backgroundColor: theme.DarkBlue,
                         color: theme.color,
                      }}
-                     name='search-input'
+                     aria-label='selectId'
                      value={search}
                      onChange={(e) => setSearch(e.target.value)}
                   />
                </div>
-               <form action=''>
+               <form>
                   <select
                      id='cars'
                      name='cars'

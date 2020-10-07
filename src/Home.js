@@ -92,7 +92,7 @@ const Home = () => {
                      value={search}
                      onChange={(e) => setSearch(e.target.value)}
                   >
-                     <option value='' selected='selected' disabled='disabled'>
+                     <option value='' disabled='disabled'>
                         Filter by Region
                      </option>
                      <option value='Africa'>Africa</option>
@@ -130,7 +130,6 @@ const Home = () => {
                               </p>
                            </li>
                            <li>
-                              
                               <p>
                                  Capital: <span>{item.capital} </span>
                               </p>
@@ -145,5 +144,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
